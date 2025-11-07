@@ -1,0 +1,5 @@
+dump.bin
+mnt/*
+dump.img
+ubuntu_vm_encrypted.img
+ubuntu_vm.img
