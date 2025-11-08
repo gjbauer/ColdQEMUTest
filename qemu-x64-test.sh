@@ -20,4 +20,4 @@ cryptosift -st 1 -nc dump.bin mnt/*
 sudo umount mnt
 sudo losetup -d "$LOOP_DEVICE"
 rm -rf mnt
-qemu-system-x86_64 -m 4G --enable-kvm -cpu host -smp 4 -hda ubuntu_vm.qcow2 -hdb ubuntu_vm_encrypted.qcow2 -drive file=dump.img,format=raw -net nic,model=virtio -net user -display sdl,gl=on
+qemu-system-x86_64 -m 4G --enable-kvm -cpu host -smp 4 -hda ubuntu_vm.qcow2 -hdb ubuntu_vm_encrypted.qcow2 -drive file=keys.img,format=raw -net nic,model=virtio -net user -display sdl,gl=on
