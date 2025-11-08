@@ -1,5 +1,5 @@
 dump.bin
 mnt/*
-dump.img
+keys.img
 ubuntu_vm_encrypted.qcow2
 ubuntu_vm.qcow2
